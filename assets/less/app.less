@@ -1,7 +1,7 @@
 /*!
  * Roots 6.5.2
  */
-
+@import url(http://fonts.googleapis.com/css?family=Raleway);
 @import "bootstrap/bootstrap.less";
 
 /* ==========================================================================
@@ -20,23 +20,41 @@ img {
    ========================================================================== */
 
 .banner {
-margin-top:20px;
+   margin-top:20px;
+   margin-bottom:10px;
    .navLinks {
+      margin-top:10px;
       .navbar-nav {
+         margin: 0 auto;
+         display: table;
+         table-layout: fixed;
+         float:none;
+
          li {
             a {
                color:#B54993;
                font-size:1.4em;
+               text-align:center;
+
             }
-         text-align:center;
          }
-         text-align:center;
+      }
+   }
+   .welcome {
+      width:90%;
+      margin: 0 auto;
+      p {
+         padding-top:15px;
+         padding-right:15px;
+         padding-left:15px;
+         padding-bottom:15px;
+         background:#EEEEEE;
       }
    }
 }
 
 #menu-primary-navigation {
-   
+   margin: 0 auto;
 }
 
 
@@ -58,19 +76,33 @@ margin-top:20px;
    position: relative;
    margin-bottom:25px;
    .articleText{
+      text-align:justify;
+      text-justify:inter-word;
       .published{
          .postDate{
             color:#B54993;
             margin-top:10px;
          }
       }
+      .entry-summary{
+         .readMore{
+            a {
+               text-align:center;
+               color:#B54993;
+               display: block;
+            }
+         }
+      }
+      word-wrap:break-word;
    }
    .titleBanner {
       position: absolute;
+
       top: 0;
-      background-color:#B54993;
+      background-color:rgba(181, 73, 147, 0.5);
       width:100%;
       .title{
+         text-align:center;
          margin-top:5px;
          margin-left:5px;
          margin-right:5px;
@@ -167,7 +199,38 @@ margin-top:20px;
    Footer
    ========================================================================== */
 
-.content-info { }
+.content-info { 
+   background-color:#B54993;
+   min-height:150px;
+   color:white;
+   .quote{
+      text-align:center;
+      margin-top:40px;
+   }
+ }
+
+ .navFooter{
+      margin-top:10px;
+      .navbar-nav {
+         margin: 0 auto;
+         display: inline;
+         table-layout: fixed;
+         float:none;
+
+         li {
+            a {
+               color:white;
+               font-size:1.4em;
+               padding-top:5px;
+               padding-bottom:5px;
+            }
+            a:hover{
+               background-color:transparent;
+            }
+            float:none;
+         }
+      }
+   }
 
 
 
