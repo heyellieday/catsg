@@ -26,4 +26,5 @@ Description: This part is optional, but helpful for describing the Post Template
     </div>
   </div>
 </article>
+<?php get_template_part('templates/nextpost'); ?>
 <?php endwhile; ?>

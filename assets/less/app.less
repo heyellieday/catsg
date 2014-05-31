@@ -15,6 +15,17 @@ img {
    height: auto;
 }
 
+.pager {
+   li {
+      a{
+         background:transparent;
+         color:#B54993;
+         border:none;
+         font-size:1.4em;
+      }
+   }
+}
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -24,6 +35,9 @@ img {
    margin-bottom:10px;
    .navLinks {
       margin-top:10px;
+      .small {
+         font-size:.8em;
+      }
       .navbar-nav {
          margin: 0 auto;
          display: table;
@@ -49,6 +63,9 @@ img {
          padding-left:15px;
          padding-bottom:15px;
          background:#EEEEEE;
+         a{
+            color:#B54993;
+         }
       }
    }
 }
@@ -66,6 +83,11 @@ img {
 
 .content { }
 
+.col-sm-8{
+   padding-left:0px;
+   padding-right:0px;
+}
+
 .row{
    margin-left:0px;
    margin-right:0px;
@@ -78,6 +100,9 @@ img {
    .articleText{
       text-align:justify;
       text-justify:inter-word;
+      h2,h3,h4,h5,h6 {
+         color:#B54993 !important;
+      }
       .published{
          .postDate{
             color:#B54993;
@@ -207,6 +232,11 @@ img {
       text-align:center;
       margin-top:40px;
    }
+   .quoteSmall{
+      text-align:center;
+      margin-top:30px;
+      font-size:1.4em;
+   }
  }
 
  .navFooter{
@@ -231,8 +261,6 @@ img {
          }
       }
    }
-
-
 
 /* ==========================================================================
    WordPress Generated Classes

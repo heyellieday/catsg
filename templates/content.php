@@ -17,7 +17,8 @@
 
   		get_template_part('templates/default');
 
-  	} ?>
+  	} 
+    ?>
 </div>
 </div>
 
